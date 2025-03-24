@@ -24,12 +24,46 @@
       color: var(--text);
       background: var(--bg-dark);
       line-height: 1.7;
+      scroll-behavior: smooth;
     }
 
-    section, header {
+    section {
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .section-content {
+      max-width: 960px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(245, 179, 1, 0.2);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    p, li {
+      color: var(--text);
+      font-size: 1.1rem;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    header {
       position: relative;
       min-height: 100vh;
-      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -60,27 +94,12 @@
       box-shadow: 0 0 30px rgba(245, 179, 1, 0.3);
     }
 
-    h1, h2.major {
-      color: var(--accent);
-    }
-
-    h2.major {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-
-    header h1 {
+    h1 {
       font-size: 4.2rem;
+      color: var(--accent);
       margin-bottom: 1rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-    }
-
-    header p {
-      font-size: 1.25rem;
-      max-width: 760px;
-      margin: 0 auto;
-      color: var(--muted);
     }
 
     nav ul {
@@ -105,16 +124,6 @@
     nav a:hover {
       background: var(--accent);
       color: #000;
-    }
-
-    ul {
-      text-align: left;
-      margin-top: 1rem;
-      padding-left: 1.5rem;
-    }
-
-    ul li {
-      margin-bottom: 0.8rem;
     }
 
     .cta {
@@ -149,7 +158,6 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <div class="content">
       <h1>ATZ Electric</h1>
@@ -167,7 +175,62 @@
     </div>
   </header>
 
-  <!-- Sections to be added below -->
+  <section id="about">
+    <div class="section-content">
+      <h2>About Us</h2>
+      <p>ATZ Electric is a licensed and insured electrical contracting company dedicated to delivering excellence in commercial, residential, and industrial power solutions. With decades of experience and a reputation for reliability, we are committed to powering communities safely and efficiently.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-content">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Complete Residential Wiring & Rewiring</li>
+        <li>Commercial Buildouts and Tenant Improvements</li>
+        <li>Industrial Electrical Systems & Maintenance</li>
+        <li>Panel Upgrades & Circuit Breaker Replacements</li>
+        <li>LED Lighting, Smart Home & Energy Efficiency</li>
+        <li>EV Charging Station Installation</li>
+        <li>Emergency Power Backup Systems</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-content">
+      <h2>Projects</h2>
+      <p>We’ve powered hundreds of successful projects — from modern high-rise offices to advanced manufacturing plants. Our work is backed by technical skill, safety, and client satisfaction.</p>
+    </div>
+  </section>
+
+  <section id="safety">
+    <div class="section-content">
+      <h2>Safety & Compliance</h2>
+      <p>At ATZ Electric, safety is our foundation. We strictly adhere to OSHA regulations, conduct routine safety audits, and ensure all employees are certified and trained in the latest protocols. Your safety is our priority.</p>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="section-content">
+      <h2>Our Mission</h2>
+      <p>To deliver superior electrical services through skilled craftsmanship, innovation, and integrity — all while energizing our clients’ trust and success.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-content">
+      <h2>Contact Us</h2>
+      <p>Looking to start a project or need immediate assistance? Reach out to our expert team for fast, friendly support.</p>
+      <div class="cta">
+        <a href="mailto:contact@atzelectric.com" class="button">Email ATZ Electric</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ATZ Electric | Licensed Electrical Contractors | All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
